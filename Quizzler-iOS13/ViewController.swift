@@ -25,10 +25,12 @@ class ViewController: UIViewController {
     
     var questionNumber = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         updateUI()
+        progressBar.progress = 0.0
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -53,10 +55,15 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    
     @objc func updateUI(){
         questionLabel.text = quiz[questionNumber].question
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
+        
+        let current = Float(questionNumber) + 1.0
+        progressBar.progress = Float(current/12.0)
     }
     
 }
