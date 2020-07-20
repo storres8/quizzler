@@ -39,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E60B82624C5176000DD3975 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E6F783D24C24A2000F42D53 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AD4BDE3D22D878BA005BA4CC = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +73,7 @@
 				AD4BDE5222D878BC005BA4CC /* Assets.xcassets */,
 				AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */,
 				AD4BDE5722D878BC005BA4CC /* Info.plist */,
-				2E6F783D24C24A2000F42D53 /* Question.swift */,
+				2E60B82624C5176000DD3975 /* Model */,
 			);
 			path = "Quizzler-iOS13";
 			sourceTree = "<group>";
